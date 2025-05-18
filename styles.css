@@ -1,0 +1,255 @@
+header {
+  position: fixed; /* 画面上部に固定 */
+  top: 0;
+  left: 0;
+  width: 100%; /* 画面幅いっぱいに広げる */
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8b4513;
+  box-sizing: border-box;
+  z-index: 1000; /* 他要素より前面に */
+}
+.nav-link {
+  text-decoration: none;
+  color: black; /* リンクの色を設定 */
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around; /* ナビゲーションリンクを均等に配置 */
+  width: 100%;
+  justify-content: right;
+  gap: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 0 20px 0;
+}
+
+header img {
+  max-width: 150px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.desc h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #8b4513;
+}
+
+.desc p {
+  margin: 5px 0 0 0;
+}
+
+#video {
+  width: 100%;
+  height: 500px;
+}
+
+.product {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.price {
+  color: #8b4513;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product ol {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.product button {
+  background-color: #8b4513;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product button:hover {
+  background-color: #a0522d;
+}
+
+.product-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  margin: 12px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.product-img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.note {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+form p {
+  margin: 0 0 10px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="email"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #8b4513;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #a0522d;
+}
+
+footer {
+  background-color: #8b4513;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer span {
+  font-size: 14px;
+}
+
+/* スマートフォン用のスタイル */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 90px 4px 12px 4px;
+  }
+  .product-img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    min-width: 0;
+  }
+  .product {
+    margin: 12px 0;
+    padding: 12px 4px;
+  }
+  #video {
+    height: 200px;
+  }
+  section {
+    padding: 8px;
+    margin: 8px 0;
+  }
+  .heading {
+    height: auto;
+    font-size: 1.2em;
+    margin-top: 60px;
+  }
+  header img {
+    max-width: 90px;
+  }
+  #nav-bar {
+    gap: 8px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コーヒー豆　プロダクトランディングページ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3d31359043.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header id="header">
+    <img id="header-img" src="image/logo.png" alt="ロゴ" />
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">特徴</a>
+      <a href="#Video-Introduction" class="nav-link">動画紹介</a>
+      <a href="#price" class="nav-link">価格</a>
+    </nav>
+  </header>
+  <body class="container">
+    <div><h1 class="heading">極上の一杯を、あなたたに。</h1></div>
+
+    <section id="features">
+      <h2>特徴</h2>
+      <!-- セクション1の内容 -->
+      <div class="grid">
+        <div class="icon"><i class="fa-solid fa-mug-hot"></i></div>
+        <div class="desc">
+          <h2>こだわり</h2>
+          <p>
+            私たちのコーヒー豆は、一粒一粒に情熱を注いで選び抜かれたものです。世界中の最高品質の農園から厳選され、完璧な風味と香りを追求しています。豊かな土壌と気候条件のもと、丁寧に育てられたコーヒー豆は、あなたに至福の一杯をお届けします。
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa-solid fa-truck-front"></i></div>
+        <div class="desc">
+          <h2>配送</h2>
+          <p>
+            ご注文いただいたコーヒー豆は、迅速かつ丁寧に配送いたします。新鮮さを保つために、発送前に一つ一つ丁寧にパッケージングしています。お客様のもとへ、最高の状態でお届けすることをお約束します。迅速な配送と安心の追跡サービスを提供し、いつでもご注文の状態を確認いただけます。
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>
+        <div class="desc">
+          <h2>品質保証</h2>
+          <p>
+            私たちは品質に対する強い信念を持っています。すべてのコーヒー豆は、厳格な品質管理のもとで取り扱われ、最高の品質基準を満たしています。もし、商品にご満足いただけない場合は、返金または交換を保証いたします。お客様の満足を最優先に考え、信頼と安心のサービスを提供いたします。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Video-Introduction">
+      <h2>プレビュー</h2>
+      <!-- セクション2の内容 -->
+      <video
+        id="video"
+        src="video/coffee.mp4"
+        controls
+        title="コーヒー豆紹介動画"
+        style="max-width: 100%; height: auto"
+      ></video>
+    </section>
+    <section id="price">
+      <h2>価格</h2>
+      <div class="product" id="standard">
+        <div class="level">
+          <strong
+            >コモディティ（ブラジル産サントス）
+            <img
+              src="image/Santos_Brazil.png"
+              alt="ブラジル産コーヒー豆"
+              class="product-img"
+            />
+          </strong>
+        </div>
+        <p>1kg/円：<span class="price">¥5000</span></p>
+
+        <ol>
+          <li>
+            味わい：
+            酸味と苦味がバランス良く、マイルドで万人受けする味わい。ベースブレンドとして利用されることが多い。
+          </li>
+          <li>
+            特徴：
+            大量生産され、品質が安定。国際先物市場で取引される標準化された商品として、幅広い用途で用いられる。
+          </li>
+        </ol>
+
+        <button class="btn">購入</button>
+      </div>
+      <div class="product" id="premium">
+        <div class="level">
+          <strong>プレミアム(コロンビア産スプレモ)</strong>
+        </div>
+        <img
+          src="image/Colombia Supremo.png"
+          alt="コロンビア産コーヒー豆"
+          class="product-img"
+        />
+        <p>1kg/円：<span class="price">¥8000</span></p>
+        <ol>
+          <li>
+            味わい：
+            豊かな酸味と華やかな香り、程よいコクとほのかな甘みが感じられる。風味に個性があり、焙煎によってさらなる高みへと導かれる。
+          </li>
+          <li>
+            特徴：
+            トレーサビリティや品質管理が徹底され、選別された豆を使用。中量生産ながらも高い品質基準が保たれ、ロースターが個性を引き出しやすい豆として評価される。
+          </li>
+        </ol>
+        <button class="btn">購入</button>
+      </div>
+      <div class="product" id="gourmet">
+        <div class="level">
+          <strong>スペシャルティ（ジャマイカ産ブルーマウンテン）</strong>
+        </div>
+        <img
+          src="image/Jamaica Blue Mountain.png"
+          alt="ジャマイカ産コーヒー豆"
+          class="product-img"
+        />
+        <p>1kg/円：<span class="price">¥12000</span></p>
+        <ol>
+          <li>
+            味わい：クリアでバランスの取れた酸味、ほのかな甘みと豊かなアロマ。滑らかで洗練された後味が特徴。
+          </li>
+          <li>
+            特徴：
+            厳しい品質基準の下で栽培・選別された希少な豆。生産地域や量が限定されており、国際的なスペシャルティ査定で高得点を獲得するなど、一杯に特別なストーリーとラグジュアリーな体験を詰め込んでいる。
+          </li>
+        </ol>
+        <button class="btn">購入</button>
+      </div>
+    </section>
+    <p class="note">※送料は別途かかります。</p>
+
+    <form
+      id="form"
+      action="https://www.freecodecamp.com/email-submit"
+      method="post"
+    >
+      <p>
+        業者の方や大量注文をご希望の方は、下記にメールアドレスを入力し、取引内容を詳細にお伝え下さい。
+      </p>
+      <label for="email">Eメールアドレス:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Eメールアドレスを入力"
+        required
+      />
+      <input type="submit" id="submit" value="入力欄に進む" />
+    </form>
+  </body>
+  <footer>
+    <ul>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">利用規約</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+    <span>© 2025, [あなたのコーヒーブランド名]</span>
+  </footer>
+</html>
